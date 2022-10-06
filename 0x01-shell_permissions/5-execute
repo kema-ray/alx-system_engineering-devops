@@ -1,0 +1,2 @@
+#!/bash/bin
+chmod 764 hello
