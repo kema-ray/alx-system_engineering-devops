@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+iteration=1
+
+while (( iteration <= 10 ))
+do
+    if [ "$iteration" -eq "4" ]
+    then
+        echo "bad luck"
+    elif [ "$iteration" -eq "8" ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+
+    iteration=$(( iteration + 1 ))
+done
