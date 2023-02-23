@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+list=$(ls)
+
+for FILES in $list
+do
+	echo "$FILES" | cut -d "-" -f 2-
+done
