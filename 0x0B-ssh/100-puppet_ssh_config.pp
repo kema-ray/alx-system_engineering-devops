@@ -3,7 +3,7 @@ include stdlib
 file_line { 'NO password':
     ensure             => present,
     path               => '/etc/ssh/ssh_config',
-    line               => '    PasswordAuthentication no',
+    line               => 'PasswordAuthentication no',
     match              => '^PasswordAuthentication',
     append_on_no_match => true,
   }
@@ -11,7 +11,7 @@ file_line { 'NO password':
 file_line { 'New private key holder':
     ensure             => present,
     path               => '/etc/ssh/ssh_config',
-    line               => '    IdentityFile ~/.ssh/school',
+    line               => 'IdentityFile ~/.ssh/school',
     match              => '^IdentityFile',
     append_on_no_match => true,
   }

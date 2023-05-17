@@ -47,6 +47,6 @@ frontend kema-ray.tech-https-frontend
 
 backend kema-ray.tech-backend
 	balance roundrobin
-	server web01 34.73.0.174:80 check
-	server web02 35.196.78.105:80 check
+	server web01 34.207.211.153:80 check
+	server web02 54.144.155.234:80 check
 #--kema-ray.tech-params-end--

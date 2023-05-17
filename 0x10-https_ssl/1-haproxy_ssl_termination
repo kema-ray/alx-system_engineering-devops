@@ -49,5 +49,5 @@ frontend www-https
 backend www-backend
         redirect scheme https if !{ ssl_fc }
         balance roundrobin
-        server 172285-web-01 3.89.155.33:80 check
-        server 172285-web-02 18.206.192.99:80 check
+        server 172285-web-01 34.207.211.153:80 check
+        server 172285-web-02 54.144.155.234:80 check
