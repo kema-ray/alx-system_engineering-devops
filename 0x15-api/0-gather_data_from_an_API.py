@@ -6,12 +6,10 @@ information about his/her TODO list progress
 import requests
 import sys
 
-
 API = "https://jsonplaceholder.typicode.com/"
 """
 REST API url
 """
-
 
 if __name__ == '__main__':
     user = requests.get(API + "users/{}".format(sys.argv[1])).json()
