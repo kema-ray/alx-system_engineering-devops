@@ -5,8 +5,12 @@ Python script to export data in the JSON format
 import json
 import requests
 
+api = "https://jsonplaceholder.typicode.com/"
+"""
+REST API url
+"""
+
 if __name__ == "__main__":
-    api = "https://jsonplaceholder.typicode.com/"
     users = requests.get(api + "users").json()
 
     with open("todo_all_employees.json", "w") as jsonfile:
